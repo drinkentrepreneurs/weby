@@ -1,0 +1,76 @@
+<?php
+/**
+ ** Theme Name: Wedy
+ ** Theme URI: http://www.drinkentrepreneurs.org/
+ ** Description: The 2013 default theme for Drinkentrepreneurs.
+ ** Author: Antoine Angot
+ ** Author URI: http://antoine.angot.me
+ ** Version: 1.0
+ ** Tags: black, blue, white
+ ** License:
+ ** License URI:
+ **/
+?>
+<?php get_header(); ?>
+  <div id="tagline_overlay">
+    <img alt="" src="/wp-content/themes/wedy/images/bullehome2.png"/>
+  </div><!-- #tagline_overlay -->
+  <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+ 
+  <div id="main_content" > 
+    <div id="actions_wrap">
+    <ul>
+
+
+      <li class="actions_facebook">
+         
+        <fb:fan profile_id="112605822096951" css="http://www.radiozerozero.com/site_media/public/fb.css?4" width="523" height="190" show_faces="true" stream="false" connections="9" header="false" ></fb:fan>
+         
+      </li>
+      <li class="actions_entrepreneur">
+        <p> Déja plus de 2000 entrepreneurs assistent tout les mois a nos évènements ! Alors ... </p>
+        <a id="mail_subscribe" href="http://aperoentrepreneurs.us1.list-manage.com/subscribe?u=20050599182eb6ae40065d390&id=d2fe3accba"></a>
+      </li>
+  </ul>
+  </div><!-- #actions_wrap -->
+
+
+  <div id="first_time" class="clearfix">
+    <h3><img alt="Comment ça se passe la première fois" src="/wp-content/themes/wedy/images/step0_home.png"></h3>
+    <ul>
+      <li>
+        <h2><img alt="Vous venez" src="/wp-content/themes/wedy/images/step1_home.png"></h2>
+        <p>L'ApéroEntrepreneurs est ouvert à toutes celles et tous ceux qui ont créé ou sont en train de créer leur entreprise. Pour venir, c'est très simple : venez à 19h au lieu de rendez-vous, c'est tout !
+</p>
+      </li>
+      <li>
+        <h2><img alt="Vous discutez" src="/wp-content/themes/wedy/images/step2_home.png"></h2>
+        <p>Participer à un ApéroEntrepreneurs, c'est comme retrouver des amis pour boire un pot : pas de badges, pas de discours, pas de cérémonial. Insérez-vous dans les groupes et rejoignez simplement la discussion ! Si vous êtes timide, faites-vous un peu violence et dites simplement "c'est la première fois que je viens".
+</p>
+      </li>
+      <li>
+        <h2><img alt="Vous revenez" src="/wp-content/themes/wedy/images/step3_home.png"></h2>
+        <p>C'est une étape importante, vous verrez qu'on y prend vite goût et surtout que l'on retrouve avec plaisir les entrepreneurs rencontrés la fois précédente... et bien d'autres encore ! Alors rendez-vous tous les 1ers jeudis du mois, à 19h !
+</p>
+      </li>
+    </ul>
+  </div><!-- #first_time -->
+
+  <?php
+/*
+         $mypages = get_pages( array( 'include' => '22,20', sort_order => 'desc') );
+  foreach ($mypages as $page ) {
+    $content = $page->post_content;
+    if ( ! $content ) // Check for empty page
+      continue;
+
+    $content = apply_filters( 'the_content', $content );
+
+    echo $content;
+
+  }
+*/
+  ?>
+  </div><!-- #main_content -->
+<?php get_footer(); ?>
+
