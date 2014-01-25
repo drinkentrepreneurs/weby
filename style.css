@@ -216,24 +216,29 @@ img {
   height: auto;
   list-style: none;
   margin: 0px 0px 0px;
-  padding: 10px 0px 0px 23px;
+  padding: 10px 0px 0px 10px;
   position: relative;
 }
 
 #actions_wrap ul li {
+  -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;background-color:#E7F0F9;
+  border:1px solid #97BBE5;
   display: block;
   float: left;
 }
 
 #actions_wrap .actions_entrepreneur, #actions_wrap .actions_town {
-  height: 260px;
+ /* height: 141px;
   margin: 5px 10px 0px -10px;
   padding: 45px 0px 0px 25px;
-  width: 275px;
+  width: 275px;*/
 }
 
 #actions_wrap .actions_entrepreneur {
-  background: url(/wp-content/themes/wedy/images/suscribe_home.png) no-repeat;
+  /*background: url(/wp-content/themes/wedy/images/suscribe_home.png) no-repeat;*/
+  padding: 15px;
+  margin-left: 10px;
+  width: 318px;
 }
 
 #actions_wrap .actions_town {
@@ -255,12 +260,10 @@ img {
   float:left;
 }
 
-#actions_wrap .actions_facebook {
-  background: url(/wp-content/themes/wedy/images/suscribe_facebook.png) no-repeat;
-  height: 186px;
-  padding-top:15px;
-  margin: 5px 10px 0px -10px;
-  width: 523px;
+#actions_wrap .actions_youtube {
+  /*background: url(/wp-content/themes/wedy/images/suscribe_facebook.png) no-repeat;*/
+  height: 303px;
+  padding: 10px;
 }
 
 #actions_wrap p.aperoplan {
@@ -307,7 +310,6 @@ img {
   color: #666;
   margin: 0px 0px 0px 2px;
   text-shadow: white 1px 1px 0px;
-  width: 230px;
 }
 
 #main_header_scvngr {
@@ -376,7 +378,7 @@ img {
   float: left;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  width: 390px;
+  width: 300px;
 }
 .footer_col1 p {
   padding: 0 25px 0 0;
@@ -815,7 +817,7 @@ width: 100%;
 float: left;
 margin: 0 0 0 0;
 padding: 0 0 0 0;
-width: 390px;
+width: 300px;
 }
 
 #footer h2 {

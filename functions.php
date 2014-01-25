@@ -7,6 +7,17 @@
  *
  **/
 
+if ( function_exists('register_sidebar') )
+    register_sidebar( array(
+   'name' => __( 'Newsletter Widget Area'),
+   'id' => 'newsletterwidgetarea',
+   'description' => __( 'An optional widget area for your site newsletter', 'ahah' ),
+   'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+   'after_widget' => "</aside>",
+   'before_title' => '<h3 class="widget-title">',
+   'after_title' => '</h3>',
+   ) );
+
 if ( ! isset( $content_width ) )
         $content_width = 584;
 
@@ -19,6 +30,4 @@ function wedy_setup() {
 }
 endif;
 // setup
-
-
 ?>
